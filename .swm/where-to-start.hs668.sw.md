@@ -16,7 +16,15 @@ This is the main method, entry point for the application.
 
 <br/>
 
-<br/>
+Hello world!
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 src/main/java/com/example/demo/controller/DemoController.java
+```java
+8          @GetMapping("/hello")
+9          public String hello() {
+10             return "Hello world";
+11         }
+```
 
 <br/>
 
