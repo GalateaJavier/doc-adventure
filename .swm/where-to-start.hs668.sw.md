@@ -16,13 +16,13 @@ This is the main method, entry point for the application.
 
 <br/>
 
-It works! `test`<swm-token data-swm-token=":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/test&quot;)`"/>
+It works! `hello`<swm-token data-swm-token=":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/hello&quot;)`"/>
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/main/java/com/example/demo/controller/DemoController.java
 ```java
-8          @GetMapping("/test")
+8          @GetMapping("/hello")
 9          public String hello() {
-10             return "It works!";
+10             return "Hello world!";
 11         }
 ```
 
@@ -33,13 +33,16 @@ It works! `test`<swm-token data-swm-token=":src/main/java/com/example/demo/contr
 graph TD
 A[Christmas] -->|Get money| B(Go shopping)
 B --> C{Let me think}
-C -->|`test`| D[Laptop]
+C -->|`hello`| D[Laptop]
 C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
-
 ```
-<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{Let me think}<br/>\nC \\-\\-\\>|`test`<swm-token data-swm-token=\":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/test&quot;)`\"/>| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n\n<br/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{Let me think}<br/>\nC \\-\\-\\>|`hello`<swm-token data-swm-token=\":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/hello&quot;)`\"/>| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
+
+<br/>
+
+<br/>
 
 <br/>
 
