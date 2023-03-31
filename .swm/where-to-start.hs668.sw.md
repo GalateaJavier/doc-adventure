@@ -2,10 +2,14 @@
 id: hs668
 title: Where to start
 file_version: 1.1.2
-app_version: 1.4.4
+app_version: 1.5.5
 ---
 
 This is the main method, entry point for the application.
+
+<!-- empty line --><br/>
+
+<!-- empty line --><br/>
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/main/java/com/example/demo/DemoApplication.java
 ```java
@@ -16,33 +20,44 @@ This is the main method, entry point for the application.
 
 <br/>
 
-It works! `hello`<swm-token data-swm-token=":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/hello&quot;)`"/>
+It works! `helloworld`<swm-token data-swm-token=":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/helloworld&quot;)`"/>
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/main/java/com/example/demo/controller/DemoController.java
 ```java
-8          @GetMapping("/hello")
 9          public String hello() {
-10             return "Hello world!";
+10             return getString();
 11         }
 ```
 
 <br/>
 
-<!--MERMAID {width:100}-->
+<!--MERMAID {width:50}-->
 ```mermaid
 graph TD
 A[Christmas] -->|Get money| B(Go shopping)
 B --> C{Let me think}
-C -->|`hello`| D[Laptop]
+C -->|`helloworld`| D[Laptop]
 C -->|Two| E[iPhone]
 C -->|Three| F[fa:fa-car Car]
 
 ```
-<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{Let me think}<br/>\nC \\-\\-\\>|`hello`<swm-token data-swm-token=\":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/hello&quot;)`\"/>| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
+<!--MCONTENT {content: "graph TD<br/>\nA\\[Christmas\\] \\-\\-\\>|Get money| B(Go shopping)<br/>\nB \\-\\-\\> C{Let me think}<br/>\nC \\-\\-\\>|`helloworld`<swm-token data-swm-token=\":src/main/java/com/example/demo/controller/DemoController.java:8:6:6:`    @GetMapping(&quot;/helloworld&quot;)`\"/>| D\\[Laptop\\]<br/>\nC \\-\\-\\>|Two| E\\[iPhone\\]<br/>\nC \\-\\-\\>|Three| F\\[fa:fa-car Car\\]<br/>\n<br/>"} --->
 
 <br/>
 
-<br/>
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 src/main/java/com/example/demo/DemoApplication.java
+```java
+6      @SpringBootApplication
+7      public class DemoApplication {
+8      
+9      	public static void main(String[] args) {
+10     		SpringApplication.run(DemoApplication.class, args);
+11     	}
+12     
+13     }
+```
 
 <br/>
 
